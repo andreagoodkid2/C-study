@@ -1,0 +1,48 @@
+namespace oklala
+{
+    using System;
+    
+    using static System.Console;
+    class findmaxxx
+    {
+        static void Main()
+        {
+
+            Write("Input number of elements: ");
+            int n = Convert.ToInt32(ReadLine());
+            int[] arr = new int[n];
+
+            for (int i = 0; i < arr.Length; i++) 
+            {
+                Write("Number {0}: ", i + 1);
+                arr[i] = Convert.ToInt32(ReadLine());
+            }
+
+
+            Write("Numbers in array: ");
+            for (int i = 0; i < n; i++) 
+            {
+                Write(arr[i]+" ");
+            }
+
+
+            int max = arr[0];
+            for (int i = 0; i < n; i++)
+            {
+                if (max < arr[i])
+                {
+                    max = arr[i];
+
+                }
+              
+                    
+            }
+            Write("\nMax is: {0}", max);
+
+
+
+
+
+        }
+        }
+}
