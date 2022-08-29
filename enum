@@ -1,0 +1,21 @@
+namespace oklala
+{
+    using System;
+    using static System.Console;
+    class Program
+    {
+         
+       public  enum chiso
+        {
+            DoDong = 0,
+            DoNguoi=20,
+            DoAm=40,
+            DoSoi=100
+        }
+        static void Main()
+        {
+            WriteLine("Nhiet do dong: {0}", (int)chiso.DoAm);
+            WriteLine("Nhiet do nguoi: {0}", (int)chiso.DoNguoi);
+        }
+    }
+}
