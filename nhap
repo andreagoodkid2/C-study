@@ -1,0 +1,52 @@
+namespace okalala
+{
+    using System;
+    using System.Text;
+    using static System.Console;
+    class Nhom3
+    {
+        enum loai
+        {
+            ChieuCao,
+            ChieuNgang,
+            ChieuDai
+        }
+
+        static void Main()
+        {
+            int kt;
+            string name, loai, loai1;
+
+            OutputEncoding = Encoding.UTF8;
+            WriteLine("Lop lap trinh Windows Form");
+            Write("Input name: ");
+            name = Convert.ToString(ReadLine());
+
+
+            Write("Input So luong cac loai cua dam: ");
+            kt = Convert.ToInt32(ReadLine());
+            int[] arr = new int[kt];
+
+            Write("Input ten loai: ");
+            loai = Convert.ToString(ReadLine());
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Write("Kich thuoc loai {0}: ", loai, i + 1);
+                arr[i] = Convert.ToInt32(ReadLine());
+            }
+
+
+
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Write(arr[i] + "");
+            }
+
+            Write("Input kich thuoc loai dam: ");
+            loai1 = Convert.ToString(ReadLine());
+
+        }
+    }
+}
