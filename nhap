@@ -15,7 +15,7 @@ namespace okalala
         static void Main()
         {
             int kt;
-            string name, loai, loai1;
+            string name, loai;
 
             OutputEncoding = Encoding.UTF8;
             WriteLine("Lop lap trinh Windows Form");
@@ -27,26 +27,28 @@ namespace okalala
             kt = Convert.ToInt32(ReadLine());
             int[] arr = new int[kt];
 
-            Write("Input ten loai: ");
-            loai = Convert.ToString(ReadLine());
+           
 
             for (int i = 0; i < arr.Length; i++)
             {
-                Write("Kich thuoc loai {0}: ", loai, i + 1);
+                Write("Input ten loai: ");
+                loai = Convert.ToString(ReadLine());
+                string loai1 = new string];
+               
+                Write("Input kich thuoc loai {0}: ", loai, i + 1);
                 arr[i] = Convert.ToInt32(ReadLine());
             }
 
 
 
 
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < kt; i++)
             {
-                Write(arr[i] + "");
+                Write("Ten loai dam: ",loai)
+                Write(arr[i] + " ");
             }
 
-            Write("Input kich thuoc loai dam: ");
-            loai1 = Convert.ToString(ReadLine());
-
+            
         }
     }
 }
