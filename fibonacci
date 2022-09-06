@@ -1,0 +1,25 @@
+namespace handsome
+{
+    using System;
+    using static System.Console;
+    class huyanh
+    {
+        static void Main() {
+            int a = 0, b = 1, c, i, n;
+            n = Convert.ToInt32(ReadLine());
+
+
+
+
+            for (i = 3; i <= n; i++)
+            {
+                c = a + b;
+                a = b;
+                b = c;
+                WriteLine("{0}", c);
+            }
+
+
+                    }
+    }
+}
